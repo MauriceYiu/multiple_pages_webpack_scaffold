@@ -1,0 +1,32 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "corejs": 2,
+                "targets": {
+                    "browsers": [
+                        "android>=4.0",
+                        "ios>=7.0",
+                        "ie>=8",
+                        "> 1% in CN"
+                    ]
+                },
+                "useBuiltIns": "usage",
+                "modules": false,
+                "loose": true
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-runtime",
+            {
+              "corejs": 2,
+              "helpers": true,
+              "regenerator": true,
+              "useESModules": false
+            }
+        ]
+    ]
+}
